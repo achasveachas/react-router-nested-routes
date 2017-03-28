@@ -11,7 +11,7 @@ In the previous lesson, we saw how to have routes dynamically render different c
 
 ## Master Detail Without Routes
 
-Have you ever used Apple's Messages app for your Mac? How about GMail? What about YouTube? All of those apps use some version of a "Master-Detail" interface. This is when there is something pertaining to the entire resource, such as a list of all messages, videos, or emails, and some more detailed display of a specific item or action on another portion of the screen. Clicking on a new item in the list changes which item we have selected.
+Have you ever used Apple's Messages app for your Mac? How about Gmail? What about YouTube? All of those apps use some version of a "Master-Detail" interface. This is when there is something pertaining to the entire resource, such as a list of all messages, videos, or emails, and some more detailed display of a specific item or action on another portion of the screen. Clicking on a new item in the list changes which item we have selected.
 
 ## Nesting
 
@@ -351,3 +351,5 @@ What we don't see is information particular to that movie, but we'll leave that 
 So far we saw how to set up our nested routes.  We do so by making one route a child of the another route.  For example, in our application above the Route pointing to `/movies` is a parent of the route pointing to `/movies/:id`.  Similarly when a user visits the child url, the component from the parent route still displays, and the component from the child url is set as a child. To display the child component, we must make use of `this.props.children`.
 
 >Note: Understanding this.props.children frequently confounds students and pros alike. So feel free to take a break, and then review this codealong again.
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/react-router-nested-routes'>React Router Nested Routes</a> on Learn.co and start learning to code for free.</p>
