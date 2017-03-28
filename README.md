@@ -15,7 +15,7 @@ Have you ever used Apple's Messages app for your Mac? How about GMail? What abou
 
 ## Nesting
 
-With __React-Router__, we can make accomplish the master detail pattern by making our components children of each other. Take YouTube for example. Let's pretend that visiting `/videos` displays a list of videos. Clicking on any video keeps our list of videos on the page, but also displays details on the selected video. This should be updated by the URL - the URL should have changed to `/videos/:id`. The VideoDetail in this case is a 'Nested Component' of `'/videos'` - it will always have the list rendered before it.
+With __React-Router__, we can accomplish the Master-Detail pattern by making our components children of each other. Take YouTube for example. Let's pretend that visiting `/videos` displays a list of videos. Clicking on any video keeps our list of videos on the page, but also displays details on the selected video. This should be updated by the URL - the URL should have changed to `/videos/:id`. The VideoDetail in this case is a 'Nested Component' of `'/videos'` - it will always have the list rendered before it.
 
 ## Code Along
 
@@ -351,3 +351,5 @@ What we don't see is information particular to that movie, but we'll leave that 
 So far we saw how to set up our nested routes.  We do so by making one route a child of the another route.  For example, in our application above the Route pointing to `/movies` is a parent of the route pointing to `/movies/:id`.  Similarly when a user visits the child url, the component from the parent route still displays, and the component from the child url is set as a child. To display the child component, we must make use of `this.props.children`.
 
 >Note: Understanding this.props.children frequently confounds students and pros alike. So feel free to take a break, and then review this codealong again.
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/react-router-nested-routes'>React Router Nested Routes</a> on Learn.co and start learning to code for free.</p>
